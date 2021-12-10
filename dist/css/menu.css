@@ -1,0 +1,281 @@
+#menu-view{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000;
+}
+#menu-view .container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) menuViewCome 1.5s forwards;
+    clip-path: inset(0 100% 0% 0%);
+    display: flex;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+#menu-view .container > div:nth-of-type(1){
+    width: 70%;
+    /*background: linear-gradient(-45deg, #14131b, #0e0e0e, #140e0c, #0c110c);*/
+	background-size: 400% 400%;
+    position: relative;
+}
+#menu-view .container > div:nth-of-type(2){
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    animation: increaseRightWidth 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    transition: 0.5s;
+}
+.right-side .bg-image-menu{
+    z-index: -1;
+    position: absolute;
+    top: -100px;
+    bottom: -100px;
+    left: -100px;
+    right: -100px;
+    background-size: 200%;
+    background-position: center;
+    background-image: url('../img/7.jpg');
+}
+#menu-view .black-voile{
+    z-index: -1;
+    opacity: 0.6;
+    animation: voileMenuOut 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+}
+.mansory-container{
+    height: 100%;
+    overflow: scroll;
+}
+.mansory{
+    padding: 35px;
+    column-count: 2;
+    column-gap: 40px;
+}
+.mansory .item:hover{
+    transform: scale(1.05, 1.05);
+}
+.mansory > .item > div{
+    opacity: 0;
+    animation: 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) ezIris forwards;
+    animation-delay: 0.8s;
+}
+.mansory > .item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    opacity: 1;
+    transition: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    cursor: pointer;
+}
+.item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.name-img{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.close-menu{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    animation: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) textComeFromRight forwards;
+    opacity: 0;
+}
+.close-menu span{
+    font-size: 18px;
+    margin-left: 10px;
+    letter-spacing: 8px;
+}
+.close-menu i{
+    font-size: 24px;
+}
+.close-menu i:hover{
+    transform: scale(1,1);
+}
+.close-menu:hover{
+    transform: translate(-5px, 0px);
+}
+.menu-items{
+    margin-top: 80px;
+    height: calc(100% - 160px);
+}
+.menu-items ul {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.menu-items ul li{
+    margin: 5px 0px;
+    animation: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) liCome forwards;
+    opacity: 0;
+    letter-spacing: 0px;
+}
+.menu-items ul li > a{
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+    letter-spacing: 50px;
+    font-size: 40px;
+}
+.bottom-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) textComeFromRight forwards;
+}
+.bottom-link span{
+    font-size: 12px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+}
+.bottom-link i{
+    font-size: 18px;
+}
+.bottom-link i:hover{
+    transform: scale(1,1);
+}
+#menu-view.outAnim{
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) menuViewOut 0.7s forwards;
+}
+#menu-view .vertical-text{
+    position: absolute;
+    right: -15px;
+    top: 10vh;
+    z-index: 1;
+}
+.vertical-text .text-container > div{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+.vertical-text .text-container{
+    background-color: rgba(0,0,0,1);
+    padding: 10px 0px 12px;
+    border-radius: 5px;
+    animation: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) textComeFromRight forwards;
+    animation-delay: 0.3s;
+}
+.defaut-inline > span{
+    display: inline-block;
+    transform-origin: 10px 10px;
+    transition: 0.4s;
+    line-height: 100px;
+}
+.defaut-inline > span:hover{
+    transform: rotate(15deg);
+}
+.defaut-inline{
+    position: relative;
+    opacity: 0.6;
+}
+.defaut-inline::before{
+    content: '';
+    background-color: white;
+    top: 49%;
+    overflow: hidden;
+    position: absolute;
+    height: 1%;
+    left: calc(0% - 50px);
+    right: calc(100% + -63px);
+    z-index: -1;
+    opacity: 0.6;
+    transition: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+.defaut-inline:hover::before{
+    right: -6%;
+    top: 85%;
+    height: 1%;
+    opacity: 0.5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.menu-items ul > li:nth-of-type(1) { animation-delay: 0.2s;}
+.menu-items ul > li:nth-of-type(2) { animation-delay: 0.25s;}
+.menu-items ul > li:nth-of-type(3) { animation-delay: 0.3s;}
+.menu-items ul > li:nth-of-type(4) { animation-delay: 0.35s;}
+.menu-items ul > li:nth-of-type(5) { animation-delay: 0.4s;}
+.menu-items ul > li:nth-of-type(6) { animation-delay: 0.45s;}
+.menu-items ul > li:nth-of-type(7) { animation-delay: 0.5s;}
+
+@keyframes smallRotate {
+	0% {
+        transform: rotate(0);
+	}
+	100% {
+        transform: rotate(15deg);
+    }
+}
+@keyframes menuViewCome {
+	0% {
+        clip-path: inset(0 100% 0% 0%);
+	}
+	100% {
+        clip-path: inset(0);
+    }
+}
+@keyframes menuViewOut {
+	0% {
+        clip-path: inset(0);
+	}
+	100% {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+@keyframes liCome {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+	}
+	100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes voileMenuOut {
+    0% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0.6; 
+    }
+}
+
+@keyframes increaseRightWidth{
+    0% {
+        opacity: 1;
+        clip-path: inset(0 0 100% 0);
+    }
+    100% { 
+        opacity: 1;
+        clip-path: inset(0);
+    }
+}
+@keyframes textComeFromRight{
+    0% {
+        opacity: 1;
+        transform: translate(-20px, 0px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translate(0);
+    }
+}
