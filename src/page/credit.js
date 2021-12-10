@@ -1,5 +1,4 @@
 import m from "mithril";
-import Oeuvres from "../oeuvre";
 import mainGrid from "../bg-grid/index"
 import menuComponent from "../component/menu"
 
@@ -13,7 +12,7 @@ const Credit = {
             m('div', {class:'social-nav'}, [
                 m('ul', [
                 m('li', [
-                    m('a', {href: 'https://www.instagram.com/alleldriss/', target:"blank_"}, m('i', {class:'fab fa-instagram'})),
+                    m('a', {href: 'https://www.instagram.com/alleldriss/', target: "blank_"}, m('i', {class: 'fab fa-instagram'})),
                 ])
                 ])
             ]),

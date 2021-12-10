@@ -2064,154 +2064,176 @@ var Oeuvre = [{
   imgName: '20.jpg',
   instaLink: '#',
   height: '33',
-  selfBackground: true
+  selfBackground: true,
+  team: 1
 }, {
   path: "3-heads-2",
   name: "3 Heads (2)",
   imgName: '21.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 1
 }, {
   path: "white-head",
   name: "White Head",
   imgName: '22.jpg',
   instaLink: '#',
   height: '19',
-  selfBackground: true
+  selfBackground: true,
+  team: 1
 }, {
   path: "black-head",
   name: "Black Head",
   imgName: '23.jpg',
   instaLink: '#',
   height: '28',
-  selfBackground: true
+  selfBackground: true,
+  team: 1
 }, {
   path: "gold-head",
   name: "Gold Head",
   imgName: '24.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 1
 }, {
   path: "lain-boy",
   name: "Lain Boy",
   imgName: '25.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "lain-boy-2",
   name: "Lain Boy (2)",
   imgName: '26.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "lain-boy-3",
   name: "Lain Boy (3)",
   imgName: '27.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "lain-boy-4",
   name: "Lain Boy (4)",
   imgName: '28.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "lain-boy-5",
   name: "Lain Boy (5)",
   imgName: '29.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "lain-boy-6",
   name: "Lain Boy (6)",
   imgName: '30.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 2
 }, {
   path: "justice",
   name: "Justice",
   imgName: '31.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 3
 }, {
   path: "justice-2",
   name: "Justice (2)",
   imgName: '32.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 3
 }, {
   path: "set",
   name: "Set",
   imgName: '33.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 4
 }, {
   path: "gold-break",
   name: "Gold Break",
   imgName: '34.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 5
 }, {
   path: "elegant-plaster",
   name: "Elegant Plaster",
   imgName: '35.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 6
 }, {
   path: "elegant-plaster-2",
   name: "Elegant Plaster (2)",
   imgName: '36.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 6
 }, {
   path: "elegant-plaster-3",
   name: "Elegant Plaster (3)",
   imgName: '37.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 6
 }, {
   path: "seated-girl",
   name: "Seated Girl",
   imgName: '38.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 7
 }, {
   path: "nature-girl",
   name: "Nature Girl",
   imgName: '39.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 8
 }, {
   path: "nature-girl-2",
   name: "Nature Girl (2)",
   imgName: '40.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 8
 }, {
   path: "nature-girl-3",
   name: "Nature Girl (3)",
   imgName: '41.jpg',
   instaLink: '#',
   height: '22',
-  selfBackground: true
+  selfBackground: true,
+  team: 8
 }];
 
 var Bio = {

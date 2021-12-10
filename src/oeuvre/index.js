@@ -6,6 +6,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '33',
     selfBackground : true,
+    team : 1,
   },
   {
     path: "3-heads-2",
@@ -14,6 +15,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 1,
   },
   {
     path: "white-head",
@@ -22,6 +24,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '19',
     selfBackground : true,
+    team : 1,
   },
   {
     path: "black-head",
@@ -30,6 +33,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '28',
     selfBackground : true,
+    team : 1,
   },
   {
     path: "gold-head",
@@ -38,6 +42,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 1,
   },
   {
     path: "lain-boy",
@@ -46,6 +51,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "lain-boy-2",
@@ -54,6 +60,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "lain-boy-3",
@@ -62,6 +69,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "lain-boy-4",
@@ -70,6 +78,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "lain-boy-5",
@@ -78,6 +87,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "lain-boy-6",
@@ -86,6 +96,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 2,
   },
   {
     path: "justice",
@@ -94,6 +105,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 3,
   },
   {
     path: "justice-2",
@@ -102,6 +114,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 3,
   },
   {
     path: "set",
@@ -110,6 +123,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 4,
   },
   {
     path: "gold-break",
@@ -118,6 +132,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 5,
   },
   {
     path: "elegant-plaster",
@@ -126,6 +141,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 6,
   },
   {
     path: "elegant-plaster-2",
@@ -134,6 +150,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 6,
   },
   {
     path: "elegant-plaster-3",
@@ -142,6 +159,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 6,
   },
   {
     path: "seated-girl",
@@ -150,6 +168,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 7,
   },
   {
     path: "nature-girl",
@@ -158,6 +177,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 8,
   },
   {
     path: "nature-girl-2",
@@ -166,6 +186,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 8,
   },
   {
     path: "nature-girl-3",
@@ -174,6 +195,7 @@ const Oeuvre = [
     instaLink: '#',
     height : '22',
     selfBackground : true,
+    team : 8,
   }
 ];
 
