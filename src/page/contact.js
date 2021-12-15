@@ -1,5 +1,4 @@
 import m from "mithril";
-import Oeuvres from "../oeuvre";
 import mainGrid from "../bg-grid/contactIndex"
 import menuComponent from "../component/menu"
 

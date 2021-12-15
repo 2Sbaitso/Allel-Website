@@ -122,31 +122,31 @@ h1{
     margin-top: -15px;
     opacity: 0;
     animation: 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderLeftTitle forwards;
-    animation-delay: 1s;
+    animation-delay: 0.4s;
 }
 .header > span:nth-of-type(2){
     margin-left: 20px;
     margin-top: 15px;
     opacity: 0;
     animation: 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderRightTitle forwards;
-    animation-delay: 1s;
+    animation-delay: 0.4s;
 }
 .outAnim .header > span:nth-of-type(2){
     opacity: 1;
-    animation: 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderRightTitleInvert forwards;
+    animation: 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderRightTitleInvert forwards;
 }
 .outAnim .header > span:nth-of-type(1){
     opacity: 1;
-    animation: 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderLeftTitleInvert forwards;
+    animation: 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) borderLeftTitleInvert forwards;
 }
 .header > div:nth-of-type(1){
     opacity: 0;
-    animation: 1.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisText forwards;
-    animation-delay: 1.5s;
+    animation: 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisText forwards;
+    animation-delay: 0.5s;
 }
 
 .outAnim .header > div:nth-of-type(1){
-    animation: 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextInvert forwards;
+    animation: 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextInvert forwards;
 }
 
 .main-centered{
@@ -164,11 +164,11 @@ h1{
     max-width: 100%;
     max-height: 100%;
     opacity: 0;
-    animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) iris forwards;
+    animation: 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) iris forwards;
     animation-delay: 0.5s;
 }
 .outAnim .main-centered img{
-    animation: 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisInvert forwards;
+    animation: 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) irisInvert forwards;
 }
 .social-nav{
     position: absolute;
@@ -177,10 +177,10 @@ h1{
     font-size: 30px;
     opacity: 0;
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) easeCome 0.4s forwards;
-    animation-delay: 2.3s;
+    animation-delay: 0.7s;
 }
 .outAnim .social-nav, .outAnim .hooked-data > div, .outAnim .indicator-ico{
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.4s forwards;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.2s forwards;
 }
 footer{
     position: absolute;
@@ -217,7 +217,7 @@ footer > div:nth-of-type(2) .indicator-ico i:first-of-type{
 .indicator-ico{
     opacity: 0;
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) easeCome 0.4s forwards;
-    animation-delay: 2.4s;
+    animation-delay: 0.8s;
 }
 .previous div, .next div{
     opacity: 0;
@@ -229,17 +229,17 @@ footer > div:nth-of-type(2) .indicator-ico i:first-of-type{
 }
 .previous div{
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) comeFromPrevious 1s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 .outAnim .previous div{
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.4s forwards;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.2s forwards;
 }
 .next div{
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) comeFromNext 1s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 .outAnim .next div{
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.4s forwards;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.2s forwards;
 }
 .previous{
     position: absolute;
@@ -275,8 +275,8 @@ footer > div:nth-of-type(2) .indicator-ico i:first-of-type{
     transform: translate(-50%,0);
     top: 100px;
     opacity: 0;
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) easeCome 0.4s forwards;
-    animation-delay: 2.2s;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) easeCome 0.3s forwards;
+    animation-delay: 1.2s;
 }
 .credit{
     white-space: nowrap;
@@ -293,10 +293,10 @@ footer > div:nth-of-type(2) .indicator-ico i:first-of-type{
 .credit > div{
     text-align: center;
     opacity: 0;
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextCredit 3s forwards;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextCredit 2s forwards;
 }
 .outAnim .credit > div{
-    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextCreditOut 1.2s forwards;
+    animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) irisTextCreditOut 0.6s forwards;
 }
 .credit > div > div:nth-of-type(2){
     font-size: 12px;
@@ -325,7 +325,7 @@ i:hover{
     text-align: center;
     opacity: 0;
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) easeCome 0.4s forwards;
-    animation-delay: 2.3s;
+    animation-delay: 0.7s;
 }
 .outAnim .indicator-index{
     animation: cubic-bezier(0.230, 1.000, 0.320, 1.000) fadeOut 0.4s forwards;

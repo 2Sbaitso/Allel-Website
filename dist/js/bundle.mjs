@@ -8197,21 +8197,98 @@ var Menu = {
       e.classList.remove("outAnim");
       e.style.display = "none";
     }, 1000);
-    /*
-    var e = document.querySelector('#menu-view')
-    e.classList.add("outAnim");
-    if(redirectLink){
-        m.route.set('/' + redirectLink, null, {state: {key: Date.now()}})
-    }
-    setTimeout(() => {
-        e.classList.remove("outAnim");
-        e.style.display = "none";
-    }, 1000)
-    */
   }
 };
 
 var Credit = {
+  view: function view(attrs) {
+    return mithril('section', {
+      id: 'sec-1',
+      "class": 'credit-view'
+    }, [mithril('div', {
+      "class": 'header'
+    }, [mithril('span', {
+      "class": 'perspective-rect'
+    }), mithril('div', mithril('h1', 'Credits')), mithril('span', {
+      "class": 'perspective-rect'
+    }), mithril('div', {
+      "class": 'social-nav'
+    }, [mithril('ul', [mithril('li', [mithril('a', {
+      href: 'https://www.instagram.com/alleldriss/',
+      target: "blank_"
+    }, mithril('i', {
+      "class": 'fab fa-instagram'
+    }))])])]), mithril(Menu)]), mithril('div', {
+      "class": 'grid-content'
+    }, [mithril('div', {
+      "class": 'grid'
+    }, [mithril('div', {
+      "class": 'grid__item pos-1'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/15.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-2'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/3.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-3'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/10.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-4'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/18.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-5'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/17.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-6'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/16.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-7'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/8.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-8'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/9.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-9'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/19.jpg);'
+    })), mithril('div', {
+      "class": 'grid__item pos-10'
+    }, mithril('div', {
+      "class": 'grid__item-img',
+      style: 'background-image:url(img/1.jpg);'
+    }))]), mithril('div', {
+      "class": 'main-credit'
+    }, [mithril('div', {
+      "class": 'item'
+    }, [mithril('h2', 'Oeuvres & Photos'), mithril.trust('<span class="heav">Allel Driss</span>')]), mithril('div', {
+      "class": 'item'
+    }, [mithril('h2', 'Bronze'), mithril.trust('<span class="heav">Fonderie CHAPON</span>')]), mithril('div', {
+      "class": 'item'
+    }, [mithril('h2', 'Design & site'), mithril.trust('<span class="heav">Louis Brahmi</span>')])])]) //m(cursor),
+    ]);
+  },
+  oncreate: function oncreate(e) {
+    mainGrid.load();
+  }
+};
+
+var Mosaic = {
   view: function view(attrs) {
     return mithril('section', {
       id: 'sec-1',
@@ -8487,7 +8564,7 @@ var Contact = {
 
 var Index = _defineProperty({
   siteIsLoaded: false,
-  // set to false in prod env.
+  // set to false in prod env. remove the loader animation
   currentIndex: null,
   nextIndex: null,
   previousIndex: null,
@@ -8583,9 +8660,7 @@ var Index = _defineProperty({
       return mithril("div", {
         "class": 'bg-image',
         'style': {
-          'background-image': 'url(\"img/' + '7.jpg'
-          /*Oeuvres[Index.currentIndex].imgName*/
-          + '\")'
+          'background-image': 'url(\"img/' + '7.jpg' + '\")'
         }
       });
     }
@@ -8661,7 +8736,7 @@ var Index = _defineProperty({
           key: Date.now()
         }
       });
-    }, 1000);
+    }, 500);
   },
 
   /*updateResponsiveUi: function() {
@@ -8726,14 +8801,14 @@ var Index = _defineProperty({
     });
     img.src = url;
   });
-}); //window.onresize = Index.updateResponsiveUi;
-
+});
 
 mithril.route.prefix = '#';
 var mountNode = document.querySelector("#app");
 var routes = {
   "/credits": Credit,
   "/contact": Contact,
+  "/mosaic": Mosaic,
   "/bio": Bio,
   "/:oeuvrePath": Index
 };

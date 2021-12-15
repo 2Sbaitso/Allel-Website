@@ -121,20 +121,6 @@ const Menu = {
       e.classList.remove("outAnim");
       e.style.display = "none";
     }, 1000);
-
-
-
-    /*
-    var e = document.querySelector('#menu-view')
-    e.classList.add("outAnim");
-    if(redirectLink){
-        m.route.set('/' + redirectLink, null, {state: {key: Date.now()}})
-    }
-    setTimeout(() => {
-        e.classList.remove("outAnim");
-        e.style.display = "none";
-    }, 1000)
-    */
   },
 };
 

@@ -2,12 +2,13 @@ import m from "mithril";
 import Oeuvres from "./oeuvre"
 import Bio from "./page/bio"
 import Credit from "./page/credit"
+import Mosaic from "./page/mosaic"
 import Contact from "./page/contact"
 import MenuComponent from "./component/menu"
 /*import Cursor from './other/cursor';*/
 
 const Index = {
-  siteIsLoaded : false, // set to false in prod env.
+  siteIsLoaded : false, // set to false in prod env. remove the loader animation
   currentIndex : null,
   nextIndex : null,
   previousIndex : null,
@@ -110,7 +111,7 @@ const Index = {
     if (item.selfBackground) {
         return m("div", {class: 'bg-image', 'style': { 'background-image' : 'url(\"img/'+ Oeuvres[Index.currentIndex].imgName +'\")'}})
     }else{
-        return m("div", {class: 'bg-image', 'style': { 'background-image' : 'url(\"img/'+ '7.jpg'/*Oeuvres[Index.currentIndex].imgName*/ +'\")'}})
+        return m("div", {class: 'bg-image', 'style': { 'background-image' : 'url(\"img/' + '7.jpg' + '\")'}})
     }
   },
   loaderView: function(url){
@@ -171,7 +172,7 @@ const Index = {
     e.classList.add("outAnim");
     setTimeout(function () {
       m.route.set("/" + Oeuvres[index].path, null, {state: {key: Date.now()}})
-    }, 1000);
+    }, 500);
   },
   /*updateResponsiveUi: function() {
     var e = document.querySelector('.main-centered img')
@@ -231,7 +232,6 @@ const Index = {
   }
 }
 
-//window.onresize = Index.updateResponsiveUi;
 m.route.prefix = '#'
 
 const mountNode = document.querySelector("#app");
@@ -239,6 +239,7 @@ const mountNode = document.querySelector("#app");
 const routes = {
   "/credits": Credit,
   "/contact": Contact,
+  "/mosaic": Mosaic,
   "/bio": Bio,
   "/:oeuvrePath": Index
 };
